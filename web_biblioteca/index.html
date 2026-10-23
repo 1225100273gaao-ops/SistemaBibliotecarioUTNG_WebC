@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca UTNG | Sistema bibliotecario</title><link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="login" class="login-wrap hidden">
+  <section class="login-card"><img src="assets/logo_utng.png" alt="UTNG" class="login-logo"><p class="eyebrow">SISTEMA BIBLIOTECARIO UTNG</p><h1>Bienvenido a tu biblioteca</h1><p class="muted">Consulta y administra el material bibliográfico.</p>
+  <form id="login-form"><label>Correo electrónico<input type="email" id="login-email" required placeholder="admin@utng.edu.mx"></label><label>Contraseña<input type="password" id="login-password" required placeholder="Contraseña"></label><button class="btn primary full">Iniciar sesión</button><p class="muted small">Demo local: ingresa cualquier correo y contraseña.</p></form></section>
+</div>
+<div id="app" class="app-shell">
+<aside class="sidebar"><div class="brand"><img src="assets/logo_utng.png" alt="Logo UTNG"><div><strong>Biblioteca UTNG</strong><small>Sistema de gestión</small></div></div>
+<nav id="navigation">
+<a href="#inicio" data-view="inicio" class="nav-link active"><span>⌂</span> Inicio</a>
+<a href="#consulta" data-view="consulta" class="nav-link"><span>⌕</span> Consulta</a>
+<a href="#gestion" data-view="gestion" class="nav-link"><span>▤</span> Gestión</a>
+<a href="#prestamos" data-view="prestamos" class="nav-link"><span>⇄</span> Préstamos</a>
+<a href="#reportes" data-view="reportes" class="nav-link"><span>▥</span> Reportes</a>
+<a href="#usuarios" data-view="usuarios" class="nav-link"><span>♙</span> Usuarios</a>
+</nav><div class="sidebar-bottom"><div class="profile-dot">A</div><div class="profile-info"><strong>Administrador</strong><small>Biblioteca</small></div><button id="logout" class="icon-btn" title="Cerrar sesión">↪</button></div></aside>
+<main class="main"><header class="topbar"><div><p class="eyebrow">SISTEMA BIBLIOTECARIO</p><h2 id="page-title">Inicio</h2></div><div class="top-actions"><span class="status-dot"></span><span>Sesión local</span><div class="avatar">A</div></div></header>
+<div id="view-container" class="content"></div><footer>Biblioteca UTNG · Interfaz web de demostración</footer></main>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h3 id="modal-title">Formulario</h3><button class="icon-btn" id="modal-close">✕</button></div><form id="modal-form"><div id="modal-fields" class="form-grid"></div><div class="modal-actions"><button type="button" class="btn secondary" id="modal-cancel">Cancelar</button><button class="btn primary">Guardar</button></div></form></div></div>
+<div id="toast" class="toast"></div>
+<script src="js/app.js"></script></body></html>
